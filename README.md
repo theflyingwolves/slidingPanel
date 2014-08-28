@@ -1,7 +1,7 @@
 slidingPanel
 ============
 
-A Javascript library that mimics the sliding panel for a given database. 
+A Javascript library that mimics the sliding panel for a given database. It incorporates smooth animation using animate.css, and auto adjust the number of items according to the window size so that the content does not flow out of the screen. 
 
 <h1>How To Use The Library</h1>
 To use the library, you will need the following dependencies:
@@ -15,16 +15,20 @@ After including the .js file into your html file, call the function _slidingPane
 Following are the explanations of the parameters:
 <ol>
 	<li>
-		_database <br>
+		'database' <br>
 		The database represented in the form of JSON arrays of strings that the sliding panel is retrieving data from.
 	</li>
 	<li>
-		_containerId <br>
+		'containerId' <br>
 		Id in the form of string indicating the id of the container where you want all the columns go!
 	</li>
 	<li>
-		_nextBtnId, _prevBtnId <br>
+		'nextBtnId', 'prevBtnId' <br>
 		Ids of the two buttons which, once clicked, will go the next(previous) panel of elements.
 	</li>
-	
+
+	<li>
+		'numOfCols' <br>
+		The number of columns on each slide
+	</li>
 </ol>
